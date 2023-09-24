@@ -12,7 +12,10 @@ class Home {
    * @return string
    */
   public static function getHome() {
-    return View::render('pages/home');
+    return View::render('pages/home', [
+        'name'        => 'PROJETO - MVC',
+        'description' => 'Testando o modelo MVC'
+    ]);
   }
 
 }
